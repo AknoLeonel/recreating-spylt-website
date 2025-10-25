@@ -37,14 +37,27 @@ const HeroSection = () => {
         "-=.5"
       );
 
+    const heroTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hero-container",
+        start: ".1% top",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
 
-      
+    heroTl.to('.hero-container', {
+      rotate: 7,
+      scale: 0.9,
+      yPercent: 30,
+      ease: 'power2.inOut'
+    })
   }, []);
   return (
     <section className="bg-main-bg">
       <div className="hero-container">
         <img
-          src="../../images/hero-img.png"
+          src="../../images/static-img.png"
           alt="heroimg"
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto scale-100 md:scale-150"
         />

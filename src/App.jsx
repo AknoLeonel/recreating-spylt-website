@@ -24,6 +24,7 @@ export default function App() {
       <main>
         <Navbar/>
         <HeroSection />
+        <div className="h-screen"></div>
       </main>
     </ReactLenis>
   )
