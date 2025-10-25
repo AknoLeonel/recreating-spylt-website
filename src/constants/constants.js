@@ -1,3 +1,19 @@
+import f1 from "../../public/videos/f1.mp4";
+import f2 from "../../public/videos/f2.mp4";
+import f3 from "../../public/videos/f3.mp4";
+import f4 from "../../public/videos/f4.mp4";
+import f5 from "../../public/videos/f5.mp4";
+import f6 from "../../public/videos/f6.mp4";
+import f7 from "../../public/videos/f7.mp4";
+
+import p1 from "../../public/images/p1.png";
+import p2 from "../../public/images/p2.png";
+import p3 from "../../public/images/p3.png";
+import p4 from "../../public/images/p4.png";
+import p5 from "../../public/images/p5.png";
+import p6 from "../../public/images/p6.png";
+import p7 from "../../public/images/p7.png";
+
 const flavorlists = [
   {
     name: "Chocolate Milk",
@@ -41,50 +57,50 @@ const nutrientLists = [
 
 const cards = [
   {
-    src: "/videos/f1.mp4",
+    src: f1,
     rotation: "rotate-z-[-10deg]",
     name: "Madison",
-    img: "/images/p1.png",
+    img: p1,
     translation: "translate-y-[-5%]",
   },
   {
-    src: "/videos/f2.mp4",
+    src: f2,
     rotation: "rotate-z-[4deg]",
     name: "Alexander",
-    img: "/images/p2.png",
+    img: p2,
   },
   {
-    src: "/videos/f3.mp4",
+    src: f3,
     rotation: "rotate-z-[-4deg]",
     name: "Andrew",
-    img: "/images/p3.png",
+    img: p3,
     translation: "translate-y-[-5%]",
   },
   {
-    src: "/videos/f4.mp4",
+    src: f4,
     rotation: "rotate-z-[4deg]",
     name: "Bryan",
-    img: "/images/p4.png",
+    img: p4,
     translation: "translate-y-[5%]",
   },
   {
-    src: "/videos/f5.mp4",
+    src: f5,
     rotation: "rotate-z-[-10deg]",
     name: "Chris",
-    img: "/images/p5.png",
+    img: p5,
   },
   {
-    src: "/videos/f6.mp4",
+    src: f6,
     rotation: "rotate-z-[4deg]",
     name: "Devante",
-    img: "/images/p6.png",
+    img: p6,
     translation: "translate-y-[5%]",
   },
   {
-    src: "/videos/f7.mp4",
+    src: f7,
     rotation: "rotate-z-[-3deg]",
     name: "Melisa",
-    img: "/images/p7.png",
+    img: p7,
     translation: "translate-y-[10%]",
   },
 ];
