@@ -1,32 +1,61 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import { flavorlists } from "../constants/constants";
 import { useRef } from "react";
-gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const FlavorSlider = () => {
-  const sliderRef = useRef(); 
-useGSAP(() => {
-  if (!sliderRef.current) return;
+  const sliderRef = useRef();
+  useGSAP(() => {
+    if (!sliderRef.current) return; // without this line it wouldn't work
+    const scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
 
-  const scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".flavor-section",
+        start: "15% top",
+        end: `+=${scrollAmount + 1100}px`,
+        scrub: true,
+        pin: true,
+      },
+    });
 
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: '.flavor-section',
-      start: '15% top',
-      end: `+=${scrollAmount + 1100}px`,
-      scrub: true,
-      pin: true
-    }
-  });
+    tl.to(".flavor-section", {
+      x: `-=${scrollAmount + 1100}px`,
+      ease: "power1.inOut",
+    });
 
-  tl.to('.flavor-section', {
-    x: `-=${scrollAmount + 1100}px`,
-    ease: 'power1.inOut'
-  });
-}); // Add scope to useGSAP
+    const titleTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".flavor-section",
+        start: "15% top",
+        end: "+=1000px",
+        scrub: true,
+      },
+    });
+
+    titleTl
+      .to(".first-text-split", {
+        xPercent: -5,
+        ease: "power1.inOut",
+      })
+      .to(
+        ".flavor-text-scroll",
+        {
+          xPercent: -3,
+          ease: "power1.inOut",
+        },
+        "<"
+      )
+      .to(
+        ".second-text-split",
+        {
+          xPercent: -2,
+          ease: "power1.inOut",
+        },
+        "<"
+      );
+  }); // Add scope to useGSAP
   return (
     <div ref={sliderRef} className="slider-wrapper">
       <div className="flavors 2xl:mt-30">
