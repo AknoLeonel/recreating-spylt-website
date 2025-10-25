@@ -4,6 +4,7 @@ import { ReactLenis } from 'lenis/react'
 import Navbar from './components/Navbar'
 import HeroSection from './sections/HeroSection'
 import MessageSection from './sections/MessageSection'
+import FlavorSection from './sections/FlavorSection'
 
 export default function App() {
   const lenisRef = useRef()
@@ -26,6 +27,7 @@ export default function App() {
         <Navbar/>
         <HeroSection />
         <MessageSection />
+        <FlavorSection />
         <div className="h-screen"></div>
       </main>
     </ReactLenis>

@@ -56,8 +56,8 @@ const HeroSection = () => {
   return (
     <section className="bg-main-bg">
       <div className="hero-container">
-        <img
-          src="../../images/static-img.png"
+        <video
+          src="../../videos/hero-bg.mp4"
           alt="heroimg"
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto scale-100 md:scale-150"
         />
