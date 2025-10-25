@@ -222,8 +222,8 @@ body::-webkit-scrollbar {
 
     .msg-text-scroll {
       @apply rotate-3 
-             2xl:translate-y-5 
-             -translate-y-5 
+             2xl:-translate-y-10 
+             -translate-y-10
              absolute 
              z-10 
              border-[.5vw] 

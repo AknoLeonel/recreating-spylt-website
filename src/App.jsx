@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { ReactLenis } from 'lenis/react'
 import Navbar from './components/Navbar'
 import HeroSection from './sections/HeroSection'
+import MessageSection from './sections/MessageSection'
 
 export default function App() {
   const lenisRef = useRef()
@@ -24,6 +25,7 @@ export default function App() {
       <main>
         <Navbar/>
         <HeroSection />
+        <MessageSection />
         <div className="h-screen"></div>
       </main>
     </ReactLenis>
