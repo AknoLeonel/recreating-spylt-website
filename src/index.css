@@ -238,6 +238,7 @@ body::-webkit-scrollbar {
     .flavor-text-scroll {
       @apply -rotate-3 
              md:translate-y-5 
+             
              border-[.5vw] 
              border-milk 
              absolute 
