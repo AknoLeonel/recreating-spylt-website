@@ -337,6 +337,7 @@ body::-webkit-scrollbar {
              md:pb-5 
              pb-0 
              lg:pb-0 
+             overflow-hidden
              md:text-center 
              text-[#513022];
     }

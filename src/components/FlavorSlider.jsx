@@ -2,47 +2,55 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollSmoother, ScrollTrigger } from "gsap/all";
 import { flavorlists } from "../constants/constants";
+import { useMediaQuery } from "react-responsive";
 import { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const FlavorSlider = () => {
   const sliderRef = useRef();
+
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1024px)",
+  });
+
   useGSAP(() => {
-    if (!sliderRef.current) return; // without this line it wouldn't work
+    if (!sliderRef.current) return;
     const scrollAmount = sliderRef.current.scrollWidth - window.innerWidth;
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".flavor-section",
-        start: "15% top",
-        end: `+=${scrollAmount + 1100}px`,
-        scrub: true,
-        pin: true,
-      },
-    });
+    if (!isTablet) {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".flavor-section",
+          start: "15% top",
+          end: `+=${scrollAmount + 2500}px`,
+          scrub: true,
+          pin: true,
+        },
+      });
 
-    tl.to(".flavor-section", {
-      x: `-=${scrollAmount + 1100}px`,
-      ease: "power1.inOut",
-    });
+      tl.to(".flavor-section", {
+        x: `-=${scrollAmount + 2500}px`,
+        ease: "power1.inOut",
+      });
+    }
 
     const titleTl = gsap.timeline({
       scrollTrigger: {
         trigger: ".flavor-section",
         start: "15% top",
-        end: "+=1000px",
+        end: "+=2000px",
         scrub: true,
       },
     });
 
     titleTl
       .to(".first-text-split", {
-        xPercent: -5,
+        xPercent: -30,
         ease: "power1.inOut",
       })
       .to(
         ".flavor-text-scroll",
         {
-          xPercent: -3,
+          xPercent: -35,
           ease: "power1.inOut",
         },
         "<"
@@ -50,12 +58,12 @@ const FlavorSlider = () => {
       .to(
         ".second-text-split",
         {
-          xPercent: -2,
+          xPercent: -30,
           ease: "power1.inOut",
         },
         "<"
       );
-  }); // Add scope to useGSAP
+  }, [isTablet]); 
   return (
     <div ref={sliderRef} className="slider-wrapper">
       <div className="flavors 2xl:mt-30">

@@ -46,20 +46,22 @@ const HeroSection = () => {
       },
     });
 
-    heroTl.to('.hero-container', {
+    heroTl.to(".hero-container", {
       rotate: 7,
       scale: 0.9,
       yPercent: 30,
-      ease: 'power2.inOut'
-    })
+      ease: "power2.inOut",
+    });
   }, []);
   return (
     <section className="bg-main-bg">
       <div className="hero-container">
         <video
           src="../../videos/hero-bg.mp4"
-          alt="heroimg"
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto scale-100 md:scale-150"
+          autoPlay
+          muted
+          playsInline
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover w-full h-full scale-100 md:scale-150"
         />
         <div className="hero-content opacity-0">
           <div className="overflow-hidden">
