@@ -32,7 +32,6 @@ export default function App() {
         <FlavorSection />
         <NutritionSection />
         <BenefitsSection />
-        <div className="h-screen"></div>
       </main>
     </ReactLenis>
   )

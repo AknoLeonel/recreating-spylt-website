@@ -4,11 +4,11 @@ import gsap from "gsap";
 const BenefitsSection = () => {
   useGSAP(() => {
     const revealTl = gsap.timeline({
-      delay: 1,
+      delay: 2,
       scrollTrigger: {
         trigger: ".benefit-section",
         start: "top 60%",
-        end: "top top",
+        end: "bottom bottom",
         scrub: 1.5,
         markers: true,
       },
@@ -18,22 +18,22 @@ const BenefitsSection = () => {
       duration: 1,
       opacity: 1,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'circ.inOut'
+      ease: 'power4.out'
     }).to(".benefit-section .second-title", {
       duration: 1,
       opacity: 1,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'circ.inOut'
+      ease: 'power4.out'
     }).to(".benefit-section .third-title", {
       duration: 1,
       opacity: 1,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'circ.inOut'
+      ease: 'power4.out'
     }).to(".benefit-section .fourth-title", {
       duration: 1,
       opacity: 1,
       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'circ.inOut'
+      ease: 'power4.out'
     })
   }, []);
   return (
