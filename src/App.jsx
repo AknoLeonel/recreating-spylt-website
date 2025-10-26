@@ -6,6 +6,7 @@ import HeroSection from './sections/HeroSection'
 import MessageSection from './sections/MessageSection'
 import FlavorSection from './sections/FlavorSection'
 import NutritionSection from './sections/NutritionSection'
+import BenefitsSection from './sections/BenefitsSection'
 
 export default function App() {
   const lenisRef = useRef()
@@ -30,6 +31,7 @@ export default function App() {
         <MessageSection />
         <FlavorSection />
         <NutritionSection />
+        <BenefitsSection />
         <div className="h-screen"></div>
       </main>
     </ReactLenis>
