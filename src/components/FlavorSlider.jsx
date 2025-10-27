@@ -63,7 +63,7 @@ const FlavorSlider = () => {
         },
         "<"
       );
-  }, [isTablet]); 
+  }, [isTablet]);
   return (
     <div ref={sliderRef} className="slider-wrapper">
       <div className="flavors 2xl:mt-30">

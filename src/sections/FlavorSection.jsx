@@ -9,7 +9,7 @@ const FlavorSection = () => {
           <FlavorTitle />
         </div>
         <div className="h-full">
-            <FlavorSlider />
+          <FlavorSlider />
         </div>
       </div>
     </section>

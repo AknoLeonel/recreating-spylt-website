@@ -8,7 +8,10 @@ const ClipPathTitle = ({
   return (
     <div className="general-title">
       <div
-        style={{ clipPath:  "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)", borderColor }}
+        style={{
+          clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)",
+          borderColor,
+        }}
         className={`${className} border-[.5vw] text-nowrap opacity-0`}
       >
         <div
