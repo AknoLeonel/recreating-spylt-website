@@ -14,27 +14,31 @@ const BenefitsSection = () => {
       },
     });
 
-    revealTl.to(".benefit-section .first-title", {
-      duration: 1,
-      opacity: 1,
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'power4.out'
-    }).to(".benefit-section .second-title", {
-      duration: 1,
-      opacity: 1,
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'power4.out'
-    }).to(".benefit-section .third-title", {
-      duration: 1,
-      opacity: 1,
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'power4.out'
-    }).to(".benefit-section .fourth-title", {
-      duration: 1,
-      opacity: 1,
-      clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-      ease: 'power4.out'
-    })
+    revealTl
+      .to(".benefit-section .first-title", {
+        duration: 1,
+        opacity: 1,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power4.out",
+      })
+      .to(".benefit-section .second-title", {
+        duration: 1,
+        opacity: 1,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power4.out",
+      })
+      .to(".benefit-section .third-title", {
+        duration: 1,
+        opacity: 1,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power4.out",
+      })
+      .to(".benefit-section .fourth-title", {
+        duration: 1,
+        opacity: 1,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+        ease: "power4.out",
+      });
   }, []);
   return (
     <section className="benefit-section">
