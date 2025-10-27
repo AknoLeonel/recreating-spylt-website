@@ -1,6 +1,7 @@
 import ClipPathTitle from "../components/ClipPathTitle";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import VideoPin from "../components/VideoPin";
 const BenefitsSection = () => {
   useGSAP(() => {
     const revealTl = gsap.timeline({
@@ -8,9 +9,8 @@ const BenefitsSection = () => {
       scrollTrigger: {
         trigger: ".benefit-section",
         start: "top 60%",
-        end: "bottom bottom",
+        end: "+=800px",
         scrub: 1.5,
-        markers: true,
       },
     });
 
@@ -82,6 +82,9 @@ const BenefitsSection = () => {
             <p>And much more...</p>
           </div>
         </div>
+      </div>
+      <div className="relative overlay-box">
+        <VideoPin />
       </div>
     </section>
   );

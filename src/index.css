@@ -326,7 +326,8 @@ body::-webkit-scrollbar {
              bottom-0 
              object-bottom 
              2xl:object-contain 
-             object-cover;
+             object-cover
+             overflow-visible;
     }
 
     .nutrition-title {
@@ -433,8 +434,7 @@ body::-webkit-scrollbar {
     .vd-pin-section {
       @apply md:h-[110vh] 
              h-dvh 
-             overflow-hidden 
-             md:-translate-y-[15%]! 
+             overflow-visible
              md:mt-0 
              mt-20;
 
