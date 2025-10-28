@@ -10,7 +10,7 @@ const HeroSection = () => {
     });
 
     const tl = gsap.timeline({
-      delay: 1.2,
+      delay: 1.5,
     });
 
     tl.to(".hero-content", {
@@ -64,7 +64,7 @@ const HeroSection = () => {
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover w-full h-full scale-100 md:scale-150"
         />
         <div className="hero-content opacity-0">
-          <div className="overflow-hidden">
+          <div className="overflow-hidden pt-1 xs:pt-0">
             <h1 className="hero-title">Freaking delicious</h1>
           </div>
           <div

@@ -8,6 +8,7 @@ import FlavorSection from "./sections/FlavorSection";
 import NutritionSection from "./sections/NutritionSection";
 import BenefitsSection from "./sections/BenefitsSection";
 import TestimonialSection from "./sections/TestimonialSection";
+import FooterSection from "./sections/FooterSection";
 
 export default function App() {
   const lenisRef = useRef();
@@ -36,7 +37,7 @@ export default function App() {
           <BenefitsSection />
           <TestimonialSection />
         </div>
-        <div className="h-screen"></div>
+        <FooterSection />
       </main>
     </ReactLenis>
   );

@@ -510,7 +510,8 @@ body::-webkit-scrollbar {
 
   .footer-section {
     @apply 2xl:min-h-dvh 
-           overflow-hidden 
+           min-h-dvh
+           overflow-visible 
            relative 
            bg-[#222123];
 

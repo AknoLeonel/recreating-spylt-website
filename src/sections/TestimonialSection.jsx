@@ -9,7 +9,7 @@ const TestimonialSection = () => {
   });
   useGSAP(() => {
     gsap.set(".testimonials-section", {
-      marginTop: "-100vh",
+      marginTop: isTablet ? "" : "-100vh",
     });
 
     const tl = gsap.timeline({
@@ -41,7 +41,7 @@ const TestimonialSection = () => {
     const pinTl = gsap.timeline({
       scrollTrigger: {
         trigger: ".testimonials-section",
-        start: isTablet ? "top 30%" : "top top", // 30% for mobile, top for desktop
+        start: isTablet ? "12% top" : "top top", // 30% for mobile, top for desktop
         end: "200% top",
         scrub: 1.5,
         pin: true,
