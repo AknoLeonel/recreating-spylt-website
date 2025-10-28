@@ -267,7 +267,7 @@ body::-webkit-scrollbar {
         @apply h-full 
                w-full 
                flex 
-               md:flex-row 
+               lg:flex-row 
                flex-col 
                items-center 
                2xl:gap-72 
@@ -300,7 +300,7 @@ body::-webkit-scrollbar {
                  bottom-5 
                  left-5 
                  text-milk 
-                 md:text-6xl 
+                 lg:text-6xl 
                  text-3xl 
                  font-semibold 
                  uppercase 
