@@ -10,7 +10,7 @@ const HeroSection = () => {
     });
 
     const tl = gsap.timeline({
-      delay: 1,
+      delay: 1.2,
     });
 
     tl.to(".hero-content", {
