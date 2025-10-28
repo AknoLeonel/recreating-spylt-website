@@ -4,9 +4,9 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useMediaQuery } from "react-responsive";
 const TestimonialSection = () => {
-    const isTablet = useMediaQuery({
-      query: "(max-width: 1024px)",
-    });
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1024px)",
+  });
   useGSAP(() => {
     gsap.set(".testimonials-section", {
       marginTop: "-100vh",
@@ -38,21 +38,21 @@ const TestimonialSection = () => {
         },
         "<"
       );
-const pinTl = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".testimonials-section",
-    start: isTablet ? "top 30%" : "top top", // 30% for mobile, top for desktop
-    end: "200% top",
-    scrub: 1.5,
-    pin: true,
-  },
-});
+    const pinTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".testimonials-section",
+        start: isTablet ? "top 30%" : "top top", // 30% for mobile, top for desktop
+        end: "200% top",
+        scrub: 1.5,
+        pin: true,
+      },
+    });
 
-    pinTl.from('.vd-card', {
-        yPercent: 150,
-        stagger: .5,
-        ease: 'power1.inOut'
-    })
+    pinTl.from(".vd-card", {
+      yPercent: 150,
+      stagger: 0.5,
+      ease: "power1.inOut",
+    });
   }, []);
 
   const vdRef = useRef([]);

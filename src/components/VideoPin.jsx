@@ -28,7 +28,11 @@ const VideoPin = () => {
     <section className="vd-pin-section">
       <div
         className="size-full cursor-pointer video-box"
-        style={{ clipPath: isMobile ? 'circle(100% at 50% 50%)' : `circle(9.5% at 50% 50%)` }}
+        style={{
+          clipPath: isMobile
+            ? "circle(100% at 50% 50%)"
+            : `circle(9.5% at 50% 50%)`,
+        }}
       >
         <video
           playsInline
