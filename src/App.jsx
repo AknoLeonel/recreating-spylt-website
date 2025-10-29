@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ReactLenis } from "lenis/react";
+import 'lenis/dist/lenis.css'
 import Navbar from "./components/Navbar";
 import HeroSection from "./sections/HeroSection";
 import MessageSection from "./sections/MessageSection";
