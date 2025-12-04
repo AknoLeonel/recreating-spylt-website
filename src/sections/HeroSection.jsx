@@ -65,24 +65,24 @@ const HeroSection = () => {
         />
         <div className="hero-content opacity-0">
           <div className="overflow-hidden pt-1 xs:pt-0">
-            <h1 className="hero-title">Freaking delicious</h1>
+            <h1 className="hero-title">Tradição e Lealdade</h1>
           </div>
           <div
             className="hero-text-scroll"
             style={{ clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)" }}
           >
             <div className="hero-subtitle">
-              <h1>Protein + Caffine</h1>
+              <h1>Pastor Alemão</h1>
             </div>
           </div>
 
           <h2>
-            Live life to the fullest with SPYLT: shatter boredom and embrace
-            your inner kid with every deliciously smooth chug.
+            Somos Associados e Reconhecidos Mundialmente Pelas Confederações FCI e CBKC. 
+            Especializados na raça Pastor Alemão Capa Preta.
           </h2>
 
           <button className="cursor-pointer select-none hero-button">
-            <p className="select-none">Chug a SPYLT</p>
+            <p className="select-none">Consultar Frete</p>
           </button>
         </div>
       </div>

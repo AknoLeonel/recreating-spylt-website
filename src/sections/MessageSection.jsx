@@ -72,8 +72,8 @@ const MessageSection = () => {
         <div className="w-full h-full">
           <div className="msg-wrapper">
             <h1 className="first-message">
-              stir up your
-              <br /> fearless past and
+              Nós do Canil
+              <br /> Bem Estar estamos
             </h1>
 
             <div
@@ -81,23 +81,23 @@ const MessageSection = () => {
               className="msg-text-scroll"
             >
               <div className="bg-light-brown md:pb-5 pb-3 px-5">
-                <h2 className="text-red-brown">Fuel Up</h2>
+                <h2 className="text-red-brown">há 11 anos</h2>
               </div>
             </div>
 
             <h1 className="second-message">
-              your future with
-              <br /> every gulp of perfect
-              <br /> Protein
+              levando sempre alegria
+              <br /> vida e muita
+              <br /> saúde ao lar.
             </h1>
           </div>
 
           <div className="flex-center mt-10 md:mt-20">
             <div className="max-w-md px-10 flex-center overflow-hidden">
               <p>
-                Rev up your rebel spirit and feed the adventure of life with
-                SPYLT, where you're one chug away from epic nostalgia and
-                fearless fun.
+                Aqui você sempre terá a certeza e a garantia de que estará adquirindo 
+                um filhote 100% Puro, Saudável, Inteligente, Equilibrado, Social e 
+                Também um verdadeiro Cão de Guarda.
               </p>
             </div>
           </div>

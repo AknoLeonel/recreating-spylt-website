@@ -1,107 +1,72 @@
-import f1 from "../../public/videos/f1.mp4";
-import f2 from "../../public/videos/f2.mp4";
-import f3 from "../../public/videos/f3.mp4";
-import f4 from "../../public/videos/f4.mp4";
-import f5 from "../../public/videos/f5.mp4";
-import f6 from "../../public/videos/f6.mp4";
-import f7 from "../../public/videos/f7.mp4";
+import videoNinhada from "../../public/videos/brin.mp4";
+import videoTreino from "../../public/videos/IMG_7520.MOV";
 
+// Importação de imagem de capa (use uma foto de um dos filhotes, renomeie para p1.png ou ajuste aqui)
 import p1 from "../../public/images/p1.png";
-import p2 from "../../public/images/p2.png";
-import p3 from "../../public/images/p3.png";
-import p4 from "../../public/images/p4.png";
-import p5 from "../../public/images/p5.png";
-import p6 from "../../public/images/p6.png";
-import p7 from "../../public/images/p7.png";
 
 const flavorlists = [
   {
-    name: "Chocolate Milk",
-    color: "brown",
+    name: "Pastor Alemão",
+    color: "black", // Cor chumbo/preta (referência à capa preta)
     rotation: "lg:rotate-[-8deg] rotate-0",
   },
   {
-    name: "Stawberry Milk",
-    color: "red",
+    name: "Capa Preta",
+    color: "orange", // Cor laranja da identidade visual
     rotation: "lg:rotate-[8deg] rotate-0",
   },
   {
-    name: "Cookies & Cream",
-    color: "blue",
+    name: "Pelo Curto",
+    color: "blue", // Cor azul petróleo da identidade visual
     rotation: "lg:rotate-[-8deg] rotate-0",
   },
   {
-    name: "Peanut Butter Chocolate",
-    color: "orange",
+    name: "Ninhada Bella",
+    color: "brown", // Destaque para a ninhada atual
     rotation: "lg:rotate-[8deg] rotate-0",
   },
   {
-    name: "Vanilla Milkshake",
-    color: "white",
+    name: "Pronta Entrega",
+    color: "white", // Destaque neutro
     rotation: "lg:rotate-[-8deg] rotate-0",
-  },
-  {
-    name: "Max Chocolate Milk",
-    color: "black",
-    rotation: "lg:rotate-[8deg] rotate-0",
   },
 ];
 
 const nutrientLists = [
-  { label: "Potassium", amount: "245mg" },
-  { label: "Calcium", amount: "500mg" },
-  { label: "Vitamin A", amount: "176mcg" },
-  { label: "Vitamin D", amount: "5mcg" },
-  { label: "Iron", amount: "1mg" },
+  { label: "Vacinação", amount: "Importada" }, // Ref: NOBIVAC DHPPi+L
+  { label: "Garantia Displasia", amount: "13 Meses" },
+  { label: "Vermifugação", amount: "3 Doses" }, // Ref: Drontal/Canex
+  { label: "Pedigree", amount: "CBPA/FCI" }, // Ref: CBPA, SBCPA ou CINOBRAS
+  { label: "Garantia Viral", amount: "30 Dias" },
 ];
 
 const cards = [
   {
-    src: f1,
+    src: videoNinhada, // Vídeo: brin.mp4
     rotation: "rotate-z-[-10deg]",
-    name: "Madison",
+    name: "Socialização",
     img: p1,
     translation: "translate-y-[-5%]",
   },
   {
-    src: f2,
+    src: videoTreino, // Vídeo: IMG_7520.MOV
     rotation: "rotate-z-[4deg]",
-    name: "Alexander",
-    img: p2,
+    name: "Guarda",
+    img: p1,
   },
   {
-    src: f3,
+    src: videoNinhada,
     rotation: "rotate-z-[-4deg]",
-    name: "Andrew",
-    img: p3,
+    name: "Temperamento",
+    img: p1,
     translation: "translate-y-[-5%]",
   },
   {
-    src: f4,
+    src: videoTreino,
     rotation: "rotate-z-[4deg]",
-    name: "Bryan",
-    img: p4,
+    name: "Estrutura",
+    img: p1,
     translation: "translate-y-[5%]",
-  },
-  {
-    src: f5,
-    rotation: "rotate-z-[-10deg]",
-    name: "Chris",
-    img: p5,
-  },
-  {
-    src: f6,
-    rotation: "rotate-z-[4deg]",
-    name: "Devante",
-    img: p6,
-    translation: "translate-y-[5%]",
-  },
-  {
-    src: f7,
-    rotation: "rotate-z-[-3deg]",
-    name: "Melisa",
-    img: p7,
-    translation: "translate-y-[10%]",
   },
 ];
 

@@ -7,19 +7,22 @@
 }
 
 @theme {
-  --color-black: #222123;
-  --color-main-bg: #232224;
+  /* Cores extraídas do Manual Terra Farias */
+  --color-black: #444c4c;      /* Cinza Chumbo Escuro [cite: 19] */
+  --color-main-bg: #f3ece2;    /* Um tom creme claro para substituir o fundo escuro */
   --color-white: #ffffff;
-  --color-dark-brown: #523122;
-  --color-mid-brown: #a26833;
-  --color-light-brown: #e3a458;
-  --color-red-brown: #7f3b2d;
-  --color-yellow-brown: #a26833;
-  --color-milk-yellow: #e3d3bc;
-  --color-red: #a02128;
-  --color-milk: #faeade;
-  --font-sans: "Antonio", sans-serif;
-  --font-paragraph: "ProximaNova, sans-serif";
+  --color-dark-brown: #444c4c; /* Usando o chumbo como cor primária escura */
+  --color-mid-brown: #5e7f8d;  /* Azul Petróleo do manual [cite: 17] */
+  --color-light-brown: #8c9998;/* Cinza Claro do manual [cite: 18] */
+  --color-red-brown: #ffa840;  /* Laranja do manual (destaque) [cite: 16] */
+  --color-yellow-brown: #ffa840;
+  --color-milk-yellow: #f3ece2;
+  --color-red: #ffa840;        /* Substituindo vermelho por laranja */
+  --color-milk: #ffffff;
+  
+  /* Fontes sugeridas pelo manual */
+  --font-sans: "Roster", "Antonio", sans-serif; /* Roster é a principal [cite: 7] */
+  --font-paragraph: "Montserrat", "ProximaNova", sans-serif; /* Montserrat é complementar [cite: 12] */
 }
 
 html,
