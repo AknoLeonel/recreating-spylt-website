@@ -39,7 +39,7 @@ const VideoPin = () => {
           muted
           loop
           autoPlay
-          src="../../videos/pin-video.mp4"
+          src="../../videos/1209.mp4"
         />
         <div className=" abs-center md:scale-100 scale-200">
           <img

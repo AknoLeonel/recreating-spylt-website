@@ -82,7 +82,7 @@ const HeroSection = () => {
           </h2>
 
           <button className="cursor-pointer select-none hero-button">
-            <p className="select-none">Consultar Frete</p>
+            <p className="select-none">Reservar Filhote</p>
           </button>
         </div>
       </div>

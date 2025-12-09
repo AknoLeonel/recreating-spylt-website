@@ -92,7 +92,7 @@ const NutritionSection = () => {
         <div className="relative inline-block md:translate-y-20">
           <div className="general-title relative flex flex-col justify-center items-center gap-24">
             <div className="overflow-hidden place-self-start">
-              <h1 className="nutrition-title">It still does</h1>
+              <h1 className="nutrition-title">Genética</h1>
             </div>
             <div
               className="nutrition-text-scroll place-self-start"
@@ -103,7 +103,7 @@ const NutritionSection = () => {
             >
               <div className="bg-yellow-brown inline-block pb-5 md:pt-0 pt-3 md:px-5 px-3">
                 <h2 className="text-milk-yellow nutrition-second-title">
-                  Body good
+                  De Ponta
                 </h2>
               </div>
             </div>
@@ -113,8 +113,7 @@ const NutritionSection = () => {
         <div className="flex md:justify-center items-center translate-y-5">
           <div className="md:max-w-xs max-w-md overflow-hidden">
             <p className="nutrition-paragraph text-lg md:text-right text-balance font-paragraph">
-              Milk contains a wide array of nutrients, including Vitamins,
-              Minerals, and Protein, and this is lactos free
+              Nossos cães possuem controle rigoroso de saúde, vacinação importada e garantia contra displasia coxofemoral e de cotovelo.
             </p>
           </div>
         </div>
@@ -125,7 +124,7 @@ const NutritionSection = () => {
               <div className="relative flex-1 col-center" key={i}>
                 <div>
                   <p className="md:text-lg font-paragraph">{label}</p>
-                  <p className="font-paragraph text-sm mt-2">up to</p>
+                  <p className="font-paragraph text-sm mt-2">garantia de</p>
                   <p className="text-2xl md:text-4xl tracking-tighter font-bold">
                     {amount}
                   </p>

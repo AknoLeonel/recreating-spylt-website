@@ -45,33 +45,33 @@ const BenefitsSection = () => {
       <div className="container mx-auto pt-20">
         <div className="col-center">
           <p>
-            Unlock the Advanteages: <br />
-            Explore the key Benefits of Choosing SPYLT
+            Linhagem de Excelência: <br />
+            Conheça os diferenciais do Canil Terra Farias
           </p>
           <div className="mt-20 col-center">
             <ClipPathTitle
-              title={"shelf stable"}
+              title={"Pedigree CBKC/FCI"}
               color={"#faeade"}
               backgroundColor={"#c88e64"}
               className={"first-title"}
               borderColor={"#222123"}
             />
             <ClipPathTitle
-              title={"protein + caffine"}
+              title={"Genética Apurada"}
               color={"#222123"}
               backgroundColor={"#faeade"}
               className={"second-title"}
               borderColor={"#222123"}
             />
             <ClipPathTitle
-              title={"infinitly recyclable"}
+              title={"Temperamento Equilibrado"}
               color={"#faeade"}
               backgroundColor={"#7f3b2d"}
               className={"third-title"}
               borderColor={"#222123"}
             />
             <ClipPathTitle
-              title={"lactose free"}
+              title={"Controle de Displasia"}
               color={"#2e2d2f"}
               backgroundColor={"#fed775"}
               className={"fourth-title"}
@@ -79,7 +79,7 @@ const BenefitsSection = () => {
             />
           </div>
           <div className="md:mt-0 mt-10">
-            <p>And much more...</p>
+            <p>E muito mais tradição...</p>
           </div>
         </div>
       </div>

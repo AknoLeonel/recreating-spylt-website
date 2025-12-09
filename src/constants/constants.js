@@ -1,5 +1,5 @@
 import videoNinhada from "../../public/videos/brin.mp4";
-import videoTreino from "../../public/videos/IMG_7520.MOV";
+import videoTreino from "../../public/videos/1209.mp4";
 
 // Importação de imagem de capa (use uma foto de um dos filhotes, renomeie para p1.png ou ajuste aqui)
 import p1 from "../../public/images/p1.png";
