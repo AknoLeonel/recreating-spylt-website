@@ -21,12 +21,12 @@ const FooterSection = () => {
 
         {isMobile ? (
           <img
-            src="/images/footer-drink.png"
+            src="/images/pastor.png"
             className="absolute bottom-0 left-0 w-full h-full object-contain object-bottom"
           />
         ) : (
           <video
-            src="../../videos/splash.mp4"
+            src="../../videos/alemão.mp4"
             autoPlay
             playsInline
             muted
