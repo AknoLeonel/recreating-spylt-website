@@ -87,7 +87,7 @@ const NutritionSection = () => {
         className="w-full object-cover"
         alt=""
       />
-      <img src="/images/big-img.png" alt="" className="big-img" />
+      <img src="/images/big-img-v2.png" alt="" className="big-img" />
       <div className="flex md:flex-row flex-col justify-between md:px-10 px-5 mt-14 md:mt-0">
         <div className="relative inline-block md:translate-y-20">
           <div className="general-title relative flex flex-col justify-center items-center gap-24">

@@ -26,7 +26,7 @@ const FooterSection = () => {
           />
         ) : (
           <video
-            src="../../videos/alemão.mp4"
+            src="/videos/alemão.mp4"
             autoPlay
             playsInline
             muted
