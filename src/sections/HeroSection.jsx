@@ -57,7 +57,7 @@ const HeroSection = () => {
     <section className="bg-main-bg">
       <div className="hero-container">
         <video
-          src="../../videos/hero-bg.mp4"
+          src="/videos/hero-bg.mp4"
           autoPlay
           muted
           playsInline

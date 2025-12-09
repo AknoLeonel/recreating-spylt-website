@@ -42,27 +42,27 @@ const nutrientLists = [
 
 const cards = [
   {
-    src: videoNinhada, // Vídeo: brin.mp4
+    src: "/videos/brin.mp4", // Vídeo: brin.mp4
     rotation: "rotate-z-[-10deg]",
     name: "Socialização",
     img: p1,
     translation: "translate-y-[-5%]",
   },
   {
-    src: videoTreino, // Vídeo: IMG_7520.MOV
+    src: "/videos/brin.mp4", // Vídeo: IMG_7520.MOV
     rotation: "rotate-z-[4deg]",
     name: "Guarda",
     img: p1,
   },
   {
-    src: videoNinhada,
+    src: "/videos/brin.mp4",
     rotation: "rotate-z-[-4deg]",
     name: "Temperamento",
     img: p1,
     translation: "translate-y-[-5%]",
   },
   {
-    src: videoTreino,
+    src: "/videos/1209.mp4",
     rotation: "rotate-z-[4deg]",
     name: "Estrutura",
     img: p1,
